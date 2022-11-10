@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Schipluiden - Huiswerk Webdesign</title>
+  <meta name="Huiswerk opdracht" content="jQuery oefenen">
+  <meta name="author" content="Priscilla">
+  <meta name="keywords:" content="jQuery oefening">
+  <meta name="viewport" content="width=device-width, initial scale=1.0"> <!-- Mobiel eerst -->
+  <link rel="stylesheet" type="text/css" href="stijl25.css"> <!-- Link naar stylesheet -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header><h4>Oefenen met jQuery</h4></header>
+    <div class="tekst1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget purus rutrum, ornare turpis laoreet, euismod metus.
+          Praesent mollis, purus vel fermentum feugiat, eros eros rhoncus nibh, in fermentum tellus nulla a ante. Aliquam imperdiet mauris ut cursus molestie.
+          Fusce consectetur erat nec euismod ullamcorper. Proin accumsan quam turpis, id bibendum nunc sodales a. Nam aliquet mollis ante, quis convallis nisl consequat vitae.
+          Nullam eget mauris nec metus ullamcorper consectetur. Integer ultricies elementum sapien ut lobortis.
+          Quisque tincidunt diam eget elit fermentum scelerisque. Vivamus venenatis vehicula ligula eu auctor. Aenean finibus dignissim erat consectetur mattis. Praesent id vestibulum est.
+          Phasellus at ipsum vitae urna bibendum pretium. Sed pharetra sem id venenatis laoreet. Nunc nisl ex, fermentum et maximus non, vestibulum sit amet libero.
+          Etiam ante urna, ultrices at urna at, venenatis accumsan neque. Quisque tempor ipsum eget arcu fringilla, a cursus sem auctor. Nulla libero nunc, consectetur a dolor quis. </p>
+    </div>
+    <div id="flip">Klik hier voor het weerbericht</div>
+    <div id="panel"><iframe id="weerplaza" class="weerplazaWidget" src="https://www.weerplaza.nl/weerwidgets/vandaag/17338/"></iframe></div>
+    <footer><h5>&copy; Copyright 2022 By Priscilla </h5></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Script jQuery -->
+    <script> // functies in het script
+      $(document).ready(function(){
+        $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+      });
+    });
+    </script>
+  </body>
+</html>

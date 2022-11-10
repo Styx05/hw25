@@ -1,0 +1,46 @@
+body {
+  background-color: #DAD7CD;
+  font-family: sans-serif, verdana;
+}
+
+header {
+  width: 100%;
+  min-height: 30px;
+  background-color: #3A5A40;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  background-color: #344E41;
+  text-align: center;
+}
+
+.tekst1 {
+  width: 50%;
+  min-height: 300px;
+  background-color: #A3b18A;
+  margin-bottom: 2%;
+}
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#weerplaza {
+  border-radius: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 370px;
+  height: 350px;
+  border: 1px;
+  border-style: solid;
+}
